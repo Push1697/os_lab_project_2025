@@ -106,7 +106,7 @@ use id_verification
 3. **Create Initial Admin (Optional)**
 ```javascript
 db.admins.insertOne({
-  email: "admin@nextcoreai.com",
+  email: "admin@example.com",
   password: "$2b$12$hash...", // Use bcrypt to hash your password
   role: "superadmin",
   isActive: true,
@@ -131,7 +131,7 @@ MONGO_URI=mongodb://localhost:27017/id_verification
 JWT_SECRET=your-super-secret-jwt-key
 
 # Admin Configuration (for initial setup)
-ADMIN_EMAIL=admin@nextcoreai.com
+ADMIN_EMAIL=admin@example.com
 ADMIN_PASSWORD=AdminPass123!
 
 # AWS S3 (Optional - uses local storage if not provided)
@@ -280,4 +280,4 @@ curl http://localhost:5000/api/health
 
 ##  Support
 
-For support, email support@nextcoreai.com
+For support, email support@example.com
